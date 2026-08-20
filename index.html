@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#f9dce2">
+  <title>给春杏的20岁生日礼物</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page-track" id="pageTrack">
+    <!-- 第一屏：生日祝福 -->
+    <section class="page page--cake" id="cakePage" aria-label="生日祝福">
+      <div class="aurora aurora--one"></div>
+      <div class="aurora aurora--two"></div>
+
+      <!-- 背景漂浮装饰 -->
+      <div class="floaters" aria-hidden="true">
+        <span class="floater heart heart--1">♥</span>
+        <span class="floater heart heart--2">♡</span>
+        <span class="floater star star--1">✦</span>
+        <span class="floater star star--2">✧</span>
+        <span class="floater dot dot--1"></span>
+        <span class="floater dot dot--2"></span>
+        <span class="floater dot dot--3"></span>
+        <span class="floater dot dot--4"></span>
+      </div>
+
+      <div class="cake-content">
+        <p class="eyebrow">A LITTLE WISH FOR YOU</p>
+
+        <!-- 参考水果奶油蛋糕重新绘制：单层粉色蛋糕 + 水果 + 一根点燃的蜡烛 -->
+        <div class="cake-scene">
+          <svg class="cake-art" viewBox="0 0 360 290" role="img" aria-label="粉色水果生日蛋糕，上面插着一根点燃的蜡烛">
+            <defs>
+              <linearGradient id="cakeBody" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#ffdbe1"/>
+                <stop offset="48%" stop-color="#f7b6c2"/>
+                <stop offset="100%" stop-color="#e88ca2"/>
+              </linearGradient>
+              <linearGradient id="cakeTop" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#fff8f3"/>
+                <stop offset="100%" stop-color="#ffd3dc"/>
+              </linearGradient>
+              <linearGradient id="dripPink" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#f48ca7"/>
+                <stop offset="100%" stop-color="#df6f90"/>
+              </linearGradient>
+              <linearGradient id="strawberryRed" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#ff7b82"/>
+                <stop offset="55%" stop-color="#e9475d"/>
+                <stop offset="100%" stop-color="#b92343"/>
+              </linearGradient>
+              <linearGradient id="peach" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#ffd596"/>
+                <stop offset="55%" stop-color="#ffad79"/>
+                <stop offset="100%" stop-color="#ef7f72"/>
+              </linearGradient>
+              <radialGradient id="berryRed" cx="35%" cy="30%" r="75%">
+                <stop offset="0%" stop-color="#ff7185"/>
+                <stop offset="75%" stop-color="#c72e51"/>
+                <stop offset="100%" stop-color="#8f1737"/>
+              </radialGradient>
+              <radialGradient id="flameColor" cx="46%" cy="30%" r="72%">
+                <stop offset="0%" stop-color="#fffbd1"/>
+                <stop offset="48%" stop-color="#ffd66e"/>
+                <stop offset="100%" stop-color="#f08a46"/>
+              </radialGradient>
+              <filter id="softShadow" x="-30%" y="-30%" width="160%" height="180%">
+                <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#a84f6b" flood-opacity=".18"/>
+              </filter>
+              <filter id="flameGlow" x="-150%" y="-150%" width="400%" height="400%">
+                <feGaussianBlur stdDeviation="5" result="blur"/>
+                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+
+            <!-- 柔和底部阴影与蛋糕托 -->
+            <ellipse cx="180" cy="265" rx="129" ry="14" fill="#d65d7f" opacity=".10"/>
+            <ellipse cx="180" cy="249" rx="139" ry="15" fill="#fffaf7" opacity=".96"/>
+
+            <!-- 圆柱蛋糕主体 -->
+            <g filter="url(#softShadow)">
+              <rect x="49" y="133" width="262" height="111" rx="35" fill="url(#cakeBody)"/>
+              <ellipse cx="180" cy="136" rx="131" ry="40" fill="url(#cakeTop)"/>
+              <ellipse cx="180" cy="137" rx="126" ry="35" fill="#ffc3cf" opacity=".46"/>
+
+              <!-- 粉色流心滴落，参考照片的 drip cake -->
+              <path d="M53 136 C75 150 95 156 116 157 C128 158 133 165 133 181 C133 194 143 194 146 181 C149 167 153 162 164 163 C181 164 185 171 185 194 C185 211 197 210 200 193 C203 173 207 168 219 168 C232 168 238 175 238 188 C238 199 247 201 252 189 C257 177 262 170 272 169 C286 167 298 159 307 151 L307 137 C282 150 255 158 181 160 C111 158 77 151 53 136 Z" fill="url(#dripPink)" opacity=".96"/>
+              <ellipse cx="180" cy="136" rx="128" ry="36" fill="#f798ad" opacity=".78"/>
+
+              <!-- 奶油花边 -->
+              <g fill="#fff6f2" stroke="#f2c5cf" stroke-width="1">
+                <circle cx="70" cy="133" r="12"/><circle cx="92" cy="125" r="12"/><circle cx="116" cy="120" r="12"/>
+                <circle cx="142" cy="117" r="12"/><circle cx="169" cy="116" r="12"/><circle cx="196" cy="116" r="12"/>
+                <circle cx="223" cy="119" r="12"/><circle cx="248" cy="123" r="12"/><circle cx="271" cy="129" r="12"/><circle cx="291" cy="137" r="11"/>
+              </g>
+
+              <!-- 水果：草莓、莓果、桃子切片 -->
+              <g>
+                <!-- 左后草莓 -->
+                <g transform="translate(91 95) rotate(-16)">
+                  <path d="M0 0 C16 -9 31 2 28 17 C25 31 13 40 0 46 C-12 37 -23 27 -24 14 C-25 1 -12 -8 0 0 Z" fill="url(#strawberryRed)"/>
+                  <path d="M-13 0 L-4 -10 L1 -1 L10 -11 L11 1 L22 -4 L16 8 L-15 8 Z" fill="#6c9d62"/>
+                  <g fill="#ffd6a3" opacity=".9"><circle cx="-9" cy="13" r="1.6"/><circle cx="6" cy="10" r="1.5"/><circle cx="13" cy="21" r="1.6"/><circle cx="0" cy="26" r="1.4"/><circle cx="-9" cy="30" r="1.4"/></g>
+                </g>
+                <!-- 中央草莓 -->
+                <g transform="translate(176 88) rotate(6)">
+                  <path d="M0 0 C17 -9 31 1 29 17 C27 31 14 42 1 49 C-12 39 -24 27 -24 14 C-24 2 -13 -8 0 0 Z" fill="url(#strawberryRed)"/>
+                  <path d="M-14 0 L-6 -12 L1 -2 L9 -13 L12 0 L23 -5 L16 8 L-15 8 Z" fill="#678f58"/>
+                  <g fill="#ffd7a5"><circle cx="-9" cy="14" r="1.5"/><circle cx="6" cy="11" r="1.5"/><circle cx="14" cy="22" r="1.6"/><circle cx="1" cy="28" r="1.4"/><circle cx="-10" cy="31" r="1.4"/></g>
+                </g>
+                <!-- 右侧草莓 -->
+                <g transform="translate(258 102) rotate(18) scale(.9)">
+                  <path d="M0 0 C16 -9 31 2 28 17 C25 31 13 40 0 46 C-12 37 -23 27 -24 14 C-25 1 -12 -8 0 0 Z" fill="url(#strawberryRed)"/>
+                  <path d="M-13 0 L-4 -10 L1 -1 L10 -11 L11 1 L22 -4 L16 8 L-15 8 Z" fill="#69985b"/>
+                  <g fill="#ffd6a3"><circle cx="-9" cy="13" r="1.6"/><circle cx="6" cy="10" r="1.5"/><circle cx="13" cy="21" r="1.6"/><circle cx="0" cy="26" r="1.4"/></g>
+                </g>
+
+                <!-- 桃子/橙子切片 -->
+                <path d="M118 123 C116 99 127 82 146 72 C157 86 157 105 146 124 Z" fill="url(#peach)" stroke="#fff0d5" stroke-width="3"/>
+                <path d="M214 123 C213 100 226 85 245 77 C253 91 251 108 240 124 Z" fill="url(#peach)" stroke="#fff0d5" stroke-width="3"/>
+
+                <!-- 莓果串 -->
+                <g fill="url(#berryRed)">
+                  <circle cx="117" cy="119" r="9"/><circle cx="130" cy="113" r="9"/><circle cx="143" cy="119" r="9"/><circle cx="123" cy="130" r="9"/><circle cx="138" cy="130" r="9"/><circle cx="151" cy="128" r="8"/>
+                  <circle cx="226" cy="120" r="8"/><circle cx="239" cy="115" r="8"/><circle cx="250" cy="121" r="8"/><circle cx="233" cy="131" r="8"/><circle cx="246" cy="131" r="8"/>
+                </g>
+                <g fill="#fff" opacity=".42"><circle cx="114" cy="116" r="2.2"/><circle cx="127" cy="110" r="2"/><circle cx="223" cy="117" r="2"/><circle cx="237" cy="112" r="2"/></g>
+              </g>
+
+              <!-- 底部小奶油球 -->
+              <g fill="#ffd8e1" stroke="#f1afbf" stroke-width="1">
+                <circle cx="102" cy="236" r="9"/><circle cx="123" cy="239" r="10"/><circle cx="146" cy="240" r="9"/>
+                <circle cx="214" cy="240" r="9"/><circle cx="237" cy="239" r="10"/><circle cx="259" cy="235" r="9"/>
+              </g>
+            </g>
+
+            <!-- 一根真正插在蛋糕中央的粉色蜡烛 -->
+            <g class="svg-candle" transform="translate(180 76)">
+              <rect x="-7" y="0" width="14" height="58" rx="5" fill="#fff9f4" stroke="#edb1c0" stroke-width="1.5"/>
+              <path d="M-7 10 L7 2 M-7 26 L7 18 M-7 42 L7 34 M-7 57 L7 49" stroke="#ef8eaa" stroke-width="4" opacity=".9"/>
+              <rect x="-1.3" y="-5" width="2.6" height="7" rx="1.3" fill="#6f4b55"/>
+              <ellipse class="svg-flame-glow" cx="0" cy="-22" rx="14" ry="18" fill="#ffc66e" opacity=".20" filter="url(#flameGlow)"/>
+              <path class="svg-candle-flame" d="M0 -42 C11 -31 9 -18 1 -12 C-8 -18 -10 -29 0 -42 Z" fill="url(#flameColor)" filter="url(#flameGlow)"/>
+              <path class="svg-candle-flame-inner" d="M0 -31 C4 -25 4 -20 0 -17 C-4 -20 -4 -25 0 -31 Z" fill="#fffbd8"/>
+            </g>
+
+          </svg>
+        </div>
+
+        <div class="greeting">
+          <p>祝春杏：</p>
+          <h1>20岁生日快乐！</h1>
+          <p class="greeting-subline">每天都要比昨天更快乐！</p>
+        </div>
+      </div>
+
+      <div class="swipe-hint">
+        <p>偷偷给你准备了一份20岁限定礼物</p>
+        <span class="swipe-arrow">⌃</span>
+        <span>上滑领取</span>
+      </div>
+    </section>
+
+    <!-- 第二屏：生日愿望实现系统 -->
+    <section class="page page--wish" id="wishPage" aria-label="生日愿望实现系统">
+      <div class="wish-stars" aria-hidden="true">
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+      <div class="wish-shell">
+        <div class="system-badge"><span class="status-dot"></span> BIRTHDAY WISH SYSTEM</div>
+        <div class="wish-intro" id="wishIntro">
+          <p class="wish-kicker">20 YEARS OLD · SPECIAL EDITION</p>
+          <h2 id="wishStatus">正在读取春杏的20岁生日愿望……</h2>
+          <div class="loading-line"><span id="loadingBar"></span></div>
+          <p class="loading-number" id="loadingNumber">0%</p>
+        </div>
+
+        <div class="wish-result" id="wishResult" aria-live="polite">
+          <p class="success-label">愿望识别成功 <span>✓</span></p>
+          <p class="wish-quote">「希望一觉醒来拥有爱因斯坦的脑子」</p>
+          <p class="installing" id="installing">正在为你安装</p>
+
+          <!-- CSS 大脑图标 -->
+          <div class="brain-wrap" id="brainWrap" aria-hidden="true">
+            <div class="brain-aura"></div>
+            <div class="brain">
+              <div class="brain-half brain-half--left"><b></b><b></b><b></b></div>
+              <div class="brain-half brain-half--right"><b></b><b></b><b></b></div>
+              <span class="brain-line"></span>
+            </div>
+            <div class="particles"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+
+          <div class="install-success" id="installSuccess">
+            <h2 class="success-title">天才大脑安装成功！</h2>
+            <p class="success-line">恭喜春杏！</p>
+            <p class="success-line">你现在已经拥有了</p>
+            <strong class="success-line">爱因斯坦同款大脑</strong>
+          </div>
+
+          <div class="stats-panel" id="statsPanel">
+            <div class="stat-row"><span>智商</span><div class="stat-track"><i></i></div><b>MAX</b></div>
+            <div class="stat-row"><span>科研能力</span><div class="stat-track"><i></i></div><b>MAX</b></div>
+            <div class="stat-row"><span>考试运气</span><div class="stat-track"><i></i></div><b>MAX</b></div>
+            <div class="stat-row"><span>快乐值</span><div class="stat-track"><i></i></div><b>∞</b></div>
+          </div>
+          <p class="certificate" id="certificate">经姚师傅亲自认证，永久有效，不接受退货。</p>
+        </div>
+      </div>
+      <div class="page-number">02 / 02</div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
